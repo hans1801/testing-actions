@@ -1,1 +1,1 @@
-print("other_file.py")
+print("other_file")
