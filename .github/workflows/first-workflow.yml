@@ -1,0 +1,13 @@
+# define an event that triggers our workflow
+on:
+  workflow_distpatch
+
+# define one or more jobs to execute
+jobs:
+  say-hello:
+  # set up a runner for a job
+    runs-on: ubuntu-latest
+  # set up a steps for a job
+    steps:
+    # run a command or use an action
+      - run: echo "hello world"
