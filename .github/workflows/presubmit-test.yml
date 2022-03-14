@@ -1,4 +1,4 @@
-name: Run presubmit-test
+name: Run presubmit-test 2
 
 on:
   pull_request_review:
@@ -13,3 +13,4 @@ jobs:
 
     steps:
       - run: echo "hello world"
+      - run: echo "${{github.event.pull_request.base.ref}}"
