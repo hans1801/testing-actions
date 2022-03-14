@@ -1,6 +1,6 @@
 # define an event that triggers our workflow
 on:
-  workflow_distpatch
+  workflow_dispatch
 
 # define one or more jobs to execute
 jobs:
