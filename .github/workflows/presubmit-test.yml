@@ -2,13 +2,12 @@ name: Run presubmit-test
 
 on:
   pull_request_review:
-    branches: [main]
     types: [submitted]
 
 jobs:
 
   test:
-    if: github.event.review.state == 'approved'
+    if: github.event.review.state == 'approved' && github.event.pull_request.base.ref == 'main'
 
     runs-on: ubuntu-latest
 
