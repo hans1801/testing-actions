@@ -1,4 +1,4 @@
-name: Run presubmit-test 2 copy
+name: Run presubmit
 
 on:
   pull_request_review:
